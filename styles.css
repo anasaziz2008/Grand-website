@@ -1,0 +1,37 @@
+.navbar{
+    background-color: white !important;
+}
+
+.navbar-nav .dropdown {
+    position: static; /* Needed for absolute positioning of the menu */
+  }
+
+.navbar-nav .dropdown-menu {
+    background-color: #155932;    
+    top: auto;
+    left: 50%; /* Position at the horizontal center of the navbar */
+    transform: translateX(-50%); /* Adjust for centering */
+    width: auto; /* Or a specific width if you prefer */
+    min-width: max-content; /* Makes sure the dropdown is at least as wide as its contents */
+    margin-top: 0;
+    border-top: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+   
+}
+
+.dropdown-item{
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;  
+    color: white;
+}
+
+
+
+.dropdown-item:hover {
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8); /* Adjust values as needed */
+    background-color: #155932; /* Or your desired hover background color */
+    color: white !important; /* Keep your text color */
+}
