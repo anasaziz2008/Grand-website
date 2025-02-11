@@ -9,15 +9,21 @@
 .navbar-nav .dropdown-menu {
     background-color: #155932;    
     top: auto;
-    left: 50%; /* Position at the horizontal center of the navbar */
-    transform: translateX(-50%); /* Adjust for centering */
-    width: auto; /* Or a specific width if you prefer */
-    min-width: max-content; /* Makes sure the dropdown is at least as wide as its contents */
+    width: auto; 
+    min-width: max-content;
     margin-top: 0;
     border-top: none;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     padding: 1rem;
    
+}
+
+@media (min-width: 992px){
+    .navbar-nav .dropdown-menu {
+        left: 50%; 
+        transform: translateX(-50%); 
+    }
+    
 }
 
 .dropdown-item{
@@ -34,4 +40,162 @@
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8); /* Adjust values as needed */
     background-color: #155932; /* Or your desired hover background color */
     color: white !important; /* Keep your text color */
+}
+
+
+.hero{
+    position: relative;
+  }
+  
+  .hero-text{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    position: absolute;
+    top: 50%; /* Center vertically */
+  left: 50%; 
+  transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+  }
+
+  .hero-text h1{
+    font-weight: 700;
+    
+  }
+
+  .hero-text h4{
+    font-weight: 600;
+  }
+
+  .hero-text p{
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  @media (max-width: 600px){
+    .hero-text h1{
+        font-size: 12px;    
+      }
+    
+      .hero-text h4{
+        font-size: 8px;
+      }
+    
+      .hero-text p{
+        font-size: 7px;
+      }
+}
+
+
+
+@media (max-width: 992px){
+   .body-parts-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #155932;
+  display: inline-block;
+}
+
+.product-card {
+  background: #fff;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
+  height: 100%;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.product-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.product-info {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.product-info .label {
+  font-weight: bold;
+  color: #333;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+.carousel-control-prev {
+  left: -20px;
+}
+
+.carousel-control-next {
+  right: -20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #333;
+  padding: 15px;
+  background-size: 50%;
+}
+
+/* Hide scrollbar but allow scrolling */
+.carousel-inner {
+  overflow: hidden;
+}
+
+.carousel-item {
+  display: none;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+/* Custom column classes for different screen sizes */
+@media (min-width: 992px) {
+  .custom-col {
+      width: 20%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .custom-col {
+      width: 33.333%;
+  }
+}
+
+@media (max-width: 767px) {
+  .custom-col {
+      width: 50%;
+  }
 }
