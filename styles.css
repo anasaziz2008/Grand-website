@@ -199,3 +199,107 @@
       width: 50%;
   }
 }
+
+.information{
+  background-color: rgba(21, 89, 50, 0.1) /* 10% transparent */
+}
+
+
+.information p{
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.details p{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: rgba(202, 202, 202, 1);
+}
+
+
+
+.pages-link {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.pages-link ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pages-link ul li {
+  display: inline;
+  position: relative;
+}
+
+.pages-link ul li:not(:last-child)::after {
+  content: "|"; /* Separator */
+  margin-left: 15px;
+  color: #ccc;
+}
+
+.pages-link a {
+  text-decoration: none;
+  color: #ccc; /* Light gray text */
+  font-size: 14px;
+}
+
+.pages-link a:hover {
+  color: white; /* White on hover */
+}
+
+
+
+
+.copyright-div {
+  color: #ccc; /* Light gray text */
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.copyright-div hr {
+  border: 0;
+  height: 2px;
+  background-color: #444; /* Light gray line */
+  width: 80%;
+  margin: 0 auto 10px;
+}
+
+.copyright-div a {
+  text-decoration: none;
+  color: #ccc; /* Link color */
+  font-weight: bold;
+}
+
+.copyright-div a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.accordion-item{
+  background-color: rgba(41, 41, 41, 1);
+  color: #fff;
+  border: none;
+}
+
+.accordion-item :hover{
+  box-shadow: none;
+  background-color: rgba(41, 41, 41, 1);
+  color: #fff;
+}
+
+.accordion-button{
+  background-color: rgba(41, 41, 41, 1);
+  color: #fff;
+}
+.accordion-button::after {
+  filter: invert(100%);
+}
