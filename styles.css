@@ -72,15 +72,15 @@
 
   @media (max-width: 600px){
     .hero-text h1{
-        font-size: 12px;    
+        font-size: 14px;    
       }
     
       .hero-text h4{
-        font-size: 8px;
+        font-size: 10px;
       }
     
       .hero-text p{
-        font-size: 7px;
+        font-size: 9px;
       }
 }
 
@@ -239,11 +239,11 @@
   position: relative;
 }
 
-.pages-link ul li:not(:last-child)::after {
-  content: "|"; /* Separator */
+/* .pages-link ul li:not(:last-child)::after {
+  content: "|";
   margin-left: 15px;
   color: #ccc;
-}
+} */
 
 .pages-link a {
   text-decoration: none;
@@ -255,6 +255,25 @@
   color: white; /* White on hover */
 }
 
+
+@media (max-width: 650px) {
+  .pages-link {
+    padding: 15px 0;
+  }
+  
+  .pages-link ul {
+    gap: 10px;
+  }
+ 
+  .pages-link ul li:not(:last-child)::after {
+  }
+  
+  
+  .pages-link a {
+    font-size: 10px;
+  }
+
+}
 
 
 
