@@ -145,9 +145,6 @@
 .carousel-control-next {
   width: 40px;
   height: 40px;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);
   opacity: 1;
@@ -163,9 +160,9 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #333;
-  padding: 15px;
+  background-color: #155932;
   background-size: 50%;
+  border-radius: 50%;
 }
 
 /* Hide scrollbar but allow scrolling */
