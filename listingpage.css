@@ -1,0 +1,43 @@
+.navbar{
+    background-color: white !important;
+}
+
+.navbar-nav .dropdown {
+    position: static; /* Needed for absolute positioning of the menu */
+  }
+
+.navbar-nav .dropdown-menu {
+    background-color: #155932;    
+    top: auto;
+    width: auto; 
+    min-width: max-content;
+    margin-top: 0;
+    border-top: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+   
+}
+
+@media (min-width: 992px){
+    .navbar-nav .dropdown-menu {
+        left: 50%; 
+        transform: translateX(-50%); 
+    }
+    
+}
+
+.dropdown-item{
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;  
+    color: white;
+}
+
+
+
+.dropdown-item:hover {
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8); /* Adjust values as needed */
+    background-color: #155932; /* Or your desired hover background color */
+    color: white !important; /* Keep your text color */
+}
