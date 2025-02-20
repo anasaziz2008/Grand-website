@@ -41,3 +41,43 @@
     background-color: #155932; /* Or your desired hover background color */
     color: white !important; /* Keep your text color */
 }
+
+.accordion-button {
+    background-color: white;
+    box-shadow: none !important;
+    border: none;
+}
+
+.accordion-item {
+    box-shadow: none !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.accordion-body {
+    box-shadow: none !important;
+}
+
+.btn-outline-dark {
+    box-shadow: none !important;
+}
+
+.btn-outline-dark:hover {
+    background-color: #155932;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: white !important;
+    box-shadow: none !important;
+}
+
+.accordion-header{
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
