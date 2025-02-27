@@ -37,47 +37,250 @@
 
 
 .dropdown-item:hover {
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8); /* Adjust values as needed */
-    background-color: #155932; /* Or your desired hover background color */
-    color: white !important; /* Keep your text color */
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    background-color: #155932; 
+    color: white !important;
 }
 
-.accordion-button {
+.filters .accordion-button{
     background-color: white;
     box-shadow: none !important;
     border: none;
 }
 
-.accordion-item {
+.filters .accordion-item {
     box-shadow: none !important;
 }
 
-.accordion-button:focus {
+.filters .accordion-button:focus {
     box-shadow: none !important;
 }
 
-.accordion-body {
+.filters .accordion-body {
     box-shadow: none !important;
 }
 
-.btn-outline-dark {
+.filters .btn-outline-dark {
     box-shadow: none !important;
 }
 
-.btn-outline-dark:hover {
+.filters .btn-outline-dark:hover {
     background-color: #155932;
     box-shadow: none !important;
 }
 
-.accordion-button:not(.collapsed) {
+.filters .accordion-button:not(.collapsed) {
     color: black;
     background-color: white !important;
     box-shadow: none !important;
 }
 
-.accordion-header{
+.filters .accordion-header{
     font-family: 'Lato', sans-serif;
     font-weight: 500;
     font-size: 24px;
 }
 
+.section-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #155932;
+    display: inline-block;
+  }
+  
+  .product-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+    height: 100%;
+  }
+  
+  @media (min-width: 992px){
+    .product-card {
+        margin: 10px; 
+      }
+      
+}
+
+  .product-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .product-image {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .product-info {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .product-info .label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+
+.page-item.active .page-link {
+    background-color: #155932;
+    border-color: #155932;
+    color: white;
+}
+
+
+
+
+.pagination-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.pagination .disabled .page-link {
+    color: #ccc;
+}
+
+
+
+
+
+
+.information{
+    background-color: rgba(21, 89, 50, 0.1) /* 10% transparent */
+  }
+  
+  
+  .information p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  .details p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: rgba(202, 202, 202, 1);
+  }
+  
+  
+  
+  .pages-link {
+    padding: 15px 0;
+    text-align: center;
+  }
+  
+  .pages-link ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .pages-link ul li {
+    display: inline;
+    position: relative;
+  }
+  
+  .pages-link a {
+    text-decoration: none;
+    color: #ccc; /* Light gray text */
+    font-size: 14px;
+  }
+  
+  .pages-link a:hover {
+    color: white; /* White on hover */
+  }
+  
+  
+  @media (max-width: 650px) {
+    .pages-link {
+      padding: 15px 0;
+    }
+    
+    .pages-link ul {
+      gap: 10px;
+    }
+   
+    
+    .pages-link a {
+      font-size: 10px;
+    }
+  
+  }
+  
+  @media (min-width: 651px) {
+    .pages-link ul li:not(:last-child)::after {
+      content: "|";
+      margin-left: 15px;
+      color: #ccc;
+    }
+    
+  }
+  
+  .copyright-div {
+    color: #ccc; /* Light gray text */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  
+  .copyright-div hr {
+    border: 0;
+    height: 2px;
+    background-color: #444; /* Light gray line */
+    width: 80%;
+    margin: 0 auto 10px;
+  }
+  
+  .copyright-div a {
+    text-decoration: none;
+    color: #ccc; /* Link color */
+    font-weight: bold;
+  }
+  
+  .copyright-div a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+  
+  .footer-accordion .accordion-item{
+    background-color: rgba(41, 41, 41, 1);
+    color: #fff;
+    border: none;
+  }
+  
+  .footer-accordion .accordion-item :hover{
+    box-shadow: none;
+    background-color: rgba(41, 41, 41, 1);
+    color: #fff;
+  }
+  
+  .footer-accordion .accordion-button{
+    background-color: rgba(41, 41, 41, 1);
+    color: #fff;
+    box-shadow: none;
+  }
+
+  .footer-accordion .accordion-button::after {
+    filter: brightness(0) invert(1);
+}
