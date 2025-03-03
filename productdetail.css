@@ -1,0 +1,119 @@
+.navbar{
+    background-color: white !important;
+}
+
+.navbar-nav .dropdown {
+    position: static; /* Needed for absolute positioning of the menu */
+  }
+
+.navbar-nav .dropdown-menu {
+    background-color: #155932;    
+    top: auto;
+    width: auto; 
+    min-width: max-content;
+    margin-top: 0;
+    border-top: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+   
+}
+
+@media (min-width: 992px){
+    .navbar-nav .dropdown-menu {
+        left: 50%; 
+        transform: translateX(-50%); 
+    }
+    
+}
+
+.dropdown-item{
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;  
+    color: white;
+}
+
+
+
+.dropdown-item:hover {
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    background-color: #155932; 
+    color: white !important;
+}
+
+.filters .accordion-button{
+    background-color: white;
+    box-shadow: none !important;
+    border: none;
+}
+
+.filters .accordion-item {
+    box-shadow: none !important;
+}
+
+.filters .accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.filters .accordion-body {
+    box-shadow: none !important;
+}
+
+.filters .btn-outline-dark {
+    box-shadow: none !important;
+}
+
+.filters .btn-outline-dark:hover {
+    background-color: #155932;
+    box-shadow: none !important;
+}
+
+.filters .accordion-button:not(.collapsed) {
+    color: black;
+    background-color: white !important;
+    box-shadow: none !important;
+}
+
+.filters .accordion-header{
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+
+.product-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+.product-image img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.thumbnail-container img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    margin: 5px;
+    border-radius: 5px;
+}
+.thumbnail-container img.active {
+    border: 2px solid green;
+}
+.contact-btn {
+    background-color: #007f3d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.contact-btn:hover {
+    background-color: #005f2d;
+}
