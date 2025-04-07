@@ -262,9 +262,104 @@
                 </span>
                 <input style="background-color: rgba(237, 237, 237, 1);" type="text" class="form-control border-0 py-3"
                     placeholder="Search for Items">
-                <button class="btn px-3" type="button" style="background-color: #155932;">
+                <button class="btn px-3 d-none d-lg-block" type="button" style="background-color: #155932;">
                     <img style="color: aliceblue;" src="/images/listingpage/searchbar/search-light.svg">
                 </button>
+                <!-- Filter Button (Trigger Modal) -->
+                <button class="btn px-3 d-block d-lg-none" type="button" style="background-color: #155932;"
+                    data-bs-toggle="modal" data-bs-target="#filterModal">
+                    <img style="color: aliceblue;" src="/images/listingpage/searchbar/filter.svg">
+                </button>
+
+                <!-- Filter Modal -->
+                <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="filterModalLabel">Filters</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="filters">
+                                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                                        <div class="accordion-item mb-3 border-0">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                                    aria-controls="panelsStayOpen-collapseOne">
+                                                    <img src="/images/listingpage/filters/make.svg">
+                                                    &nbsp;&nbsp; Make
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseOne"
+                                                class="accordion-collapse collapse show">
+                                                <div class="accordion-body d-flex flex-wrap gap-3 mx-2">
+                                                    <button class="btn btn-outline-dark">Hino
+                                                        <strong>10</strong></button>
+                                                    <button class="btn btn-outline-dark">Isuzu
+                                                        <strong>10</strong></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                    </div>
+
+                                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                                        <div class="accordion-item mb-3 border-0">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                                                    aria-controls="panelsStayOpen-collapseTwo">
+                                                    <img src="/images/listingpage/filters/model.svg">
+                                                    &nbsp;&nbsp; Model
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                                <div class="accordion-body d-flex flex-wrap gap-3 mx-2">
+                                                    <button class="btn btn-outline-dark">Giga 2015
+                                                        <strong>10</strong></button>
+                                                    <button class="btn btn-outline-dark">Giga 2015
+                                                        <strong>10</strong></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                    </div>
+
+                                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                                        <div class="accordion-item mb-3 border-0">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true"
+                                                    aria-controls="panelsStayOpen-collapseThree">
+                                                    <img src="/images/listingpage/filters/types.svg" style="filter: invert(25%) sepia(50%) saturate(500%) hue-rotate(120deg); height: 20px;">
+                                                    &nbsp;&nbsp; Search by Type
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                                <div class="accordion-body d-flex flex-wrap gap-3 mx-2">
+                                                    <button class="btn btn-outline-dark">Cables
+                                                        <strong>10</strong></button>
+                                                    <button class="btn btn-outline-dark">Cables
+                                                        <strong>10</strong></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn text-white" style="background-color: #155932;">Apply Filters</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -282,38 +377,46 @@
             </nav>
 
             <div class="container product-container">
-                <div class="row">
+                <div class="row gap-3">
                     <!-- Main Product Image -->
                     <div class="col-md-6">
-                        <div class="product-image">
+                        <div class="product-image border">
                             <img id="mainImage" src="/images/productdetail/cable.svg" alt="Product Image">
                         </div>
-                        <div class="thumbnail-container d-flex justify-content-center mt-3">
-                            <img class="thumbnail active" src="/images/productdetail/cable.svg" onclick="changeImage(this)">
-                            <img class="thumbnail" src="/images/home-page/hino-lights.svg" onclick="changeImage(this)">
-                            <img class="thumbnail" src="/images/productdetail/cable.svg" onclick="changeImage(this)">
-                            <img class="thumbnail" src="/images/productdetail/cable.svg" onclick="changeImage(this)">
+                        <div class="thumbnail-container d-flex justify-content-center">
+                            <img class="thumbnail active border" src="/images/productdetail/cable.svg" onclick="changeImage(this)">
+                            <img class="thumbnail border" src="/images/productdetail/cable.svg" onclick="changeImage(this)">
+                            <img class="thumbnail border" src="/images/productdetail/cable.svg" onclick="changeImage(this)">
+                            <img class="thumbnail border" src="/images/productdetail/cable.svg" onclick="changeImage(this)">
                         </div>
                     </div>
         
                     <!-- Product Details -->
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                         <h3>ACCELERATOR CABLE 18190-2342</h3>
-                        <p><strong>Product Code:</strong> GND-A2-004</p>
+                        <p style="color: #155932;"><strong>Product Code: GND-A2-004</strong></p>
                         <p><strong>Make:</strong> Hino</p>
                         <p><strong>Product Type:</strong> Cables</p>
                         <p><strong>OEM No:</strong> 1620-46-11</p>
-                        <a href="#" class="contact-btn">Contact Us</a>
+                        <a href="#" class="contact-btn px-5" style="background-color: #155932; border-radius: 45px;">Contact Us</a>
                         <hr>
                         <h5>Description:</h5>
                         <p>GND-A1-020 ACCELERATOR CABLE HINO-F-F 18190-2342</p>
                     </div>
                 </div>
             </div>
+
+
+            <div class="container mt-5">
+                <h2 class="section-title">Related Products</h2>
+                <div id="productContainer"></div>
+            </div>
+
+
         </div>
     </main>
 
-    <!-- <footer style="background-color: rgba(41, 41, 41, 1)">
+    <footer style="background-color: rgba(41, 41, 41, 1)">
         <div class="d-none d-lg-block">
             <div class="container text-white details py-5">
                 <div class="row">
@@ -437,7 +540,7 @@
         <div class="pages-link">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="#">Company Profile</a></li>
                 <li><a href="#">Terms and Conditions</a></li>
                 <li><a href="#">Contact Us</a></li>
@@ -449,7 +552,7 @@
             <p>Copyright © 2022-2023 <a href="#">Grand Auto Parts</a>. All Rights Reserved.</p>
         </div>
 
-    </footer> -->
+    </footer>
 
 
 
@@ -467,6 +570,45 @@
         }
     </script>
 
+<script>
+    const products1 = [
+        { make: 'Hino', product: 'Lights', image: '/images/home-page/hino-lights.svg' },
+        { make: 'Hino', product: 'Door Locks & Hinges', image: '/images/home-page/hino-lights.svg' },
+        { make: 'Hino', product: 'Arm Rest & Door Sheet', image: '/images/home-page/hino-lights.svg' },
+        { make: 'Hino', product: 'Window Regulator & Handle', image: '/images/home-page/hino-lights.svg' },
+    ];
+
+    function createProductCard(product, index) {
+    let visibilityClass = '';
+
+    if (index >= 2) visibilityClass = 'd-none d-md-block';  // Hide extra cards on small screens
+    if (index >= 3) visibilityClass += ' d-md-none d-lg-block'; // Hide extra cards on medium screens
+
+    return `
+    <div class="col-6 col-md-4 col-lg-3 mb-4 ${visibilityClass}">
+        <div class="product-card">
+            <div class="product-image-card">
+                <img src="${product.image}" alt="${product.product}">
+            </div>
+            <div class="product-info">
+                <div><span class="label">Make:</span> ${product.make}</div>
+                <div><span class="label">Product:</span> ${product.product}</div>
+            </div>
+        </div>
+    </div>
+    `;
+}
+
+// Function to render products inside a Bootstrap row
+function renderProducts() {
+    const productContainer = document.getElementById('productContainer');
+    productContainer.innerHTML = `<div class="row">${products1.map((product, index) => createProductCard(product, index)).join('')}</div>`;
+}
+
+// Call the function to render the products on page load
+document.addEventListener('DOMContentLoaded', renderProducts);
+
+</script>
 </body>
 
 </html>
