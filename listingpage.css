@@ -180,7 +180,14 @@
     color: rgba(202, 202, 202, 1);
   }
   
+  .page-link {
+    color: #28a745; /* Green or any custom color */
+  }
   
+  .page-link:hover {
+    color: #1e7e34; /* Darker green on hover */
+    text-decoration: none;
+  }
   
   .pages-link {
     padding: 15px 0;

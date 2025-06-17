@@ -294,75 +294,103 @@
     filter: brightness(0) invert(1);
 }
 
-.hidden-card {
-    display: none;
+.product-card {
+  background: #fff;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
+  height: 100%;
 }
 
-@media (min-width: 768px) {
-    /* Show first 3 cards on medium screens and hide the rest */
-    .hidden-card-md {
-        display: none;
-    }
-
-    .hidden-card {
-        display: block !important;
-    }
-    .product-card-md{
-      display: block !important;
-    }
+.product-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+.product-image {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.product-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.product-info {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.product-info .label {
+  font-weight: bold;
+  color: #333;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+.carousel-control-prev {
+  left: -13px;
+}
+
+.carousel-control-next {
+  right: -13px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #155932;
+  background-size: 50%;
+  border-radius: 50%;
+}
+
+/* Hide scrollbar but allow scrolling */
+.carousel-inner {
+  overflow: hidden;
+}
+
+.carousel-item {
+  
+  transition: transform 1s ease-in-out;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+/* Custom column classes for different screen sizes */
 @media (min-width: 992px) {
-    /* Show all cards on large screens */
-    .hidden-card-md, .hidden-card {
-        display: block !important;
-    }
-    .product-card-md{
-      display: block !important;
-    }
+  .custom-col {
+      width: 20%;
+  }
 }
 
-.hidden-card {
-    display: block; /* make sure to display all if there is no screen size specified*/
-}
-.hidden-card-sm {
-    display: none;
-}
-.hidden-card-md {
-    display: none;
+@media (min-width: 768px) and (max-width: 991px) {
+  .custom-col {
+      width: 33.333%;
+  }
 }
 
-@media (min-width: 576px) {
-    /* Show first 2 cards on small screens and hide the rest */
-    .hidden-card-sm {
-        display: block !important;
-    }
-
-    .hidden-card-md {
-      display: none !important;
-    }
-    .hidden-card{
-        display: none;
-    }
-}
-
-@media (min-width: 768px) {
-    /* Show first 3 cards on medium screens and hide the rest */
-    .hidden-card-md {
-        display: block !important;
-    }
-
-    .hidden-card-sm {
-      display: none !important;
-    }
-    .hidden-card{
-        display: none;
-    }
-}
-
-@media (min-width: 992px) {
-    /* Show all cards on large screens */
-    .hidden-card-md, .hidden-card-sm,.hidden-card {
-        display: block !important;
-    }
+@media (max-width: 767px) {
+  .custom-col {
+      width: 50%;
+  }
 }
