@@ -167,3 +167,36 @@
   .accordion-button::after {
     filter: brightness(0) invert(1);
   }
+
+  .page-title{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 40px;    
+  }
+  .underline {
+    height: 3px;
+    width: 70px;
+    background-color: #155932; /* green */
+  }
+
+  .description {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    color: #767676;
+    font-size: 16px;
+  }
+
+  .terms-title{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #155932;
+    font-size: 25px;
+  }
+
+  .terms-detail {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #767676;
+    font-size: 17px;
+    line-height: 200%;
+  }

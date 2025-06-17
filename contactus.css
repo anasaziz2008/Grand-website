@@ -43,8 +43,26 @@
     
 }
 
+.page-title{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 40px;    
+}
+.underline {
+  height: 3px;
+  width: 70px;
+  background-color: #155932; /* green */
+}
+
+.description{
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 16px;    
+  color: #767676;
+}
+
 .form-control {
-    background-color: #f9f9f9;
+  background-color: #F9F9F9;
     box-shadow: none;
     border-radius: 8px;
   }
@@ -89,7 +107,8 @@
     padding: 10px 20px;
   }
   .btn-chat:hover {
-    background-color: #173c20;
+    background-color: #033d11;
+    color: white;
   }
 
 
@@ -216,3 +235,10 @@
   .accordion-button::after {
     filter: brightness(0) invert(1);
   }
+
+.card-text{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #767676
+}
